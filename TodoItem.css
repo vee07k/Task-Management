@@ -1,0 +1,94 @@
+.todo-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .todo-item.completed {
+    opacity: 0.7;
+    background-color: #f0f0f0;
+  }
+  
+  .todo-item.completed h3 {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .todo-content {
+    flex: 1;
+  }
+  
+  .todo-content h3 {
+    margin: 0 0 8px 0;
+    color: #333;
+  }
+  
+  .todo-content p {
+    margin: 0 0 8px 0;
+    color: #666;
+  }
+  
+  .todo-content small {
+    color: #999;
+    font-size: 0.8em;
+  }
+  
+  .todo-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .toggle-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .toggle-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .toggle-btn.completed {
+    background-color: #f39c12;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .toggle-btn:hover, .delete-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animation classes */
+  .fade-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }
